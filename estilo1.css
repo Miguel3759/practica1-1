@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7ccfec;
+}
+
+
+header{
+    background-color: #DDDDDD;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    color: #444444;
+    text-shadow: 2px 2px 5px deeppink;
+    font-size: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo em{
+    color: deeppink;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#menu a{
+    background-color: deepskyblue;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #444444;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menu a:hover{
+    background-color: dodgerblue;
+}
+
+
+.columna1{
+    background: rgb(255, 254, 254);
+    margin: 10px;
+    border-radius: 5px ;
+    width: 280px;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    line-height: 45px;
+    color: #8e8b8b;
+    border-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+   
+}
+.columna2,.columna3{
+
+    margin: 0px;
+    width: auto;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.columna2 img{
+    width: 300px;
+    height: 100%;
+    transition: 2s;
+}
+.columna2 img:hover{
+    transform: translateX(-13%);
+    filter: brightness(80%);
+}
+.columna3 img{
+    width: 300px;
+    height: 100%;
+    transition: 2s;
+}
+.columna3 img:hover{
+    transform: translateX(13%);
+    filter: brightness(80%);
+}
+
+
+
+
+
+/*division 3 col*/
+
+.col3 h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 52px;
+    margin-bottom: 30px;
+    text-align:center ;
+    background-color: #3b5496;
+    margin: 0px;
+    padding: 0px;
+}
+
+.equipo{
+ 
+    
+    background-color: #444444;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.equipo .miembro_equipo{
+    background: rgb(255, 254, 254);
+    margin: 10px 5px;
+    border-radius: 5px ;
+    margin-bottom: 10px;
+    width: 288px;
+    padding: 30px 30px 30px 30px;
+    line-height: 20px;
+    color: #8e8b8b;
+    border-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.equipo .miembro_equipo h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.equipo .miembro_equipo p.rol{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px ;
+    text-align: center;
+}
+
+
+.equipo .miembro_equipo .imagen_equipo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    header{
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor{
+        margin: 70px ;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+ 
+    .columna1{
+        background: rgb(255, 254, 254);
+        margin: 10px;
+        border-radius: 5px ;
+        width: 280px;
+        height: auto;
+        padding: 10px 20px 10px 20px;
+        line-height: 45px;
+        color: #8e8b8b;
+        border-color: red;
+       
+    }
+
+    .columna2, .columna3{
+    width: 280px;
+    float: left;
+    margin: 10px; 
+
+   
+    }
+
+
+
+.col3{
+   margin-top: 0px;
+   
+}   
+.col3 h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 52px;
+    margin-bottom: 30px;
+    text-align:center ;
+    background-color: #3b5496;
+    margin: 0px;
+    padding: 0px;
+}
+.equipo{
+    display: flex;
+    text-align:left;
+    width: auto;
+    justify-content: center;
+    background-color: #444444;
+     padding: 50px;
+}
+
+
+.equipo .miembro_equipo{
+    background: rgb(255, 254, 254);
+    margin: 10px 5px;
+    border-radius: 5px ;
+    margin-bottom: 100px;
+    width: 500px;
+    padding: 100px 100px 50px 50px;
+    line-height: 20px;
+    color: #8e8b8b;
+    border-color: red;
+}
+
+.equipo .miembro_equipo h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+    text-align: center;
+}
+.equipo .miembro_equipo p.rol{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px ;
+    text-align: center;
+}
+.equipo .miembro_equipo .imagen_equipo{
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+    #logo{
+        margin: 15px 10px;
+        font-size: 1.8em;
+        flex-direction: row;
+        align-items: center;
+    }
+    #menu{
+        flex-direction: row;
+        align-items: center;
+    }
+    #menu a{
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 0px 5px;
+        font-size: 0.8em;
+    }  
+}
